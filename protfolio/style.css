@@ -1,0 +1,283 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ background-color: black;
+}
+.hero{
+	background-image:linear-gradient(rgba(70,50,100,0.4),rgba(105,80,45,0.4)),url("F:/protfolio/img/logo2.jpg");
+	height:100vh;
+    background-size:cover;
+    position:relative;
+
+}
+.navbar-brand{
+	font-size: 20px;
+	color: orange;
+	margin: 14px;
+	padding: 8px;
+	margin-left: 10px;
+	position: absolute;
+	text-decoration: none;
+}
+.navbar-brand:hover{
+	color: greenyellow;
+}
+.navbar{
+	
+}
+ .nav_tag{
+ 	display: flex;
+ 	margin-left: 750px;
+ 	margin-right: 20px;
+ 	padding: 17px;
+ 	text-decoration: none;
+ 	justify-content: space-between;
+
+}
+ .nav-link{
+ 	color: orange;
+ 	margin: 14px;
+ 	text-decoration: none;
+ 	word-spacing: max(5px, 0);
+ 	font-size: 18px;
+ }
+ .nav-link:hover{
+ 	color: greenyellow;
+ 	background-color: transparent;
+
+ }
+ 
+
+
+
+
+.hero_title {
+    font-size: 3.5rem;
+    color: orange;
+    background-color: transparent;
+}
+.hero_title:hover{
+	color: greenyellow;
+	font-size: 3.7rem;
+}
+.hero_desc {
+    font-size: 2rem;
+    background-color: transparent;
+
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ghostwhite;
+    background-color: transparent;
+}
+.hero-text:hover{
+	color: orange;
+	font-size: bold;
+}
+
+.self-intro{
+ 	margin: 14px;
+ 	display: flex;
+ 	padding: 10px;
+ }
+ .raj{
+ 	color: orange;
+ 	text-decoration: underline;
+ }
+ .self-intro h2{
+ 	color: orange;
+ 	margin-left: 120px;
+ }
+.img-my{
+	margin: 1px;
+	border: 2px;
+	border-color: green;
+}
+.about-word{
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	color:ghostwhite ;
+}
+.about-word:hover{
+	color: greenyellow;
+}
+.my-intro{
+	color: ghostwhite;
+	font-size: 22px;
+}
+.use{
+	margin-left: 20px;
+	padding: 30px;
+	font-size: 17px;
+	color: ghostwhite;
+}
+.useee{
+	text-align: center;
+}
+.detail{
+	display: flex;
+	margin:2px;
+	padding: 12px;
+}
+.beta{
+   font-family: serif;
+   padding: 10px;
+   margin: 10px;
+}
+.beta h5{
+	margin: 35px;
+}
+.beta h5:hover{
+	color: greenyellow;
+}
+.beta span{
+	margin-right: 20px;
+}
+.alpha{
+	 font-family: serif;
+   padding: 10px;
+   margin: 10px;
+
+}
+.alpha h5{
+	margin: 35px;
+}
+.alpha h5:hover{
+	color: greenyellow;
+}
+.alpha span{
+	margin-right: 20px;
+}
+
+.skill{
+	margin-top: 22px;
+	margin: 11px;
+	padding: 14px;
+
+}
+.html-class{
+	border: 2px;
+	width: 400px;
+	border-color: white;
+	background-color: orange;
+	border-radius: 33px;
+	margin: 20PX;
+}
+.html-class:hover{
+	background-color: greenyellow;
+}
+
+.html-class h5{
+	margin-left: 344px;
+	color:black;
+	padding: ;
+	background-color: transparent;
+}
+.skill-use1{
+	padding: 10PX;
+	margin: 40PX;
+}
+.skill-use1 p{
+	color: ghostwhite;
+}
+.skill-use1 p:hover{
+ color: greenyellow;
+}
+.skill-use{
+	display: flex;
+	margin-left: 90px;
+	padding: 10px;
+
+}
+.small-intro{
+	text-align: center;
+}
+.sem{
+	margin-left: 160px;
+	padding: 40px;
+}
+.sem h2{
+	color: ghostwhite;
+	font-family: serif;
+
+}
+.sem h3{
+	color: orange;
+	margin-left: 20px;
+}
+.sem p{
+	color: ghostwhite;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 8px;
+}
+.sem p a{
+	color: ghostwhite;
+	text-decoration: none;
+	color: orange;
+}
+.line{
+	display: flex;
+	margin: 20px;
+}
+
+
+.vertical{
+	border-left: 6px solid orange;
+	margin: 25px;
+	margin-left: 10px;
+	height: 240px;
+}
+.verticals{
+	border-left: 3px solid orange;
+	margin: 10px;
+	margin-left: 110px;
+	height: 370px;
+}
+.con{
+	margin: 25px;
+	padding: 22px;
+	margin-left: 60px;
+	display: flex;
+}
+.map{
+
+
+}
+.contact-my{
+	margin-left: 100px;
+	color: ghostwhite;
+}
+.contact-my h3{
+	color: orange;
+	padding: 10px;
+}
+.contact-my p{
+	margin: 14px;
+}
+.contact-my p a{
+	color: orange;
+	text-decoration: none;
+}
+.contact-my p a:hover{
+	color: yellowgreen;
+}
+.footer {
+	margin: 53px;
+}
+.footer hr{
+	color: orange;
+}
+
+.footer h4{
+	color: ghostwhite;
+	text-align: center;
+	padding: 22px;
+}
+
