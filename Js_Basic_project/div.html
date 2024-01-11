@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>div</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div>
+		<div class="header">
+			<div class="logo">
+				<h2>JS_Project</h2>
+			</div>
+			<div class="side_logo">
+				<h2>CO-Ordinator-<h4 style="margin-top: 27px; margin-left: 9px;">Prf.Ankit Verma Sir</h4></h2>
+					
+				
+			</div>
+			
+		</div>
+	</div>
+	<div class="home">
+		<a href="file:///C:/Users/RANJAN/Desktop/kiet%20html/Js_Basic_project/index.html">
+		  <div class="home_in">
+			<h3 style="color: black;">Home</h3>
+			
+		</div>
+		</a>
+		
+	</div>
+    
+    <div class="sum_main">
+    <h2 style="color: greenyellow;">First Number</h2>	
+    <input type="text" id="firstname" value="2">
+    <br>
+     <h2 style="color: greenyellow;">Second Number</h2>
+    <input type="text" id="lastname" value="3">
+    <br><br>
+    <input type="submit" onclick="divfunction(4, 3)" style="background-color: yellowgreen; color: black;">
+    <div class="Answer">
+    <h2 style="color: yellowgreen;">Answer
+    <h3 id="demo" style="color: orangered;">df</h3></h2>
+    </div>
+    <br><br>
+    </div>
+    
+
+    <script type="text/javascript">
+        
+        function divfunction(p1, p2) {
+        	//const num1=pardseInt(promt('Enter the First Num'));
+            var num1 = parseInt(document.getElementById("firstname").value);
+            //const num2=pardseInt(promt('Enter the second Num'));
+            var num2 = parseInt(document.getElementById("lastname").value);
+            const div = num1 / num2;
+            document.getElementById("demo").innerHTML = div;
+        }
+
+              
+    </script>
+</body>
+</html>

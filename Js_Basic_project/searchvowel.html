@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Vowels</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>JS_Project</h2>
+        </div>
+        <div class="side_logo">
+            <h2>CO-Ordinator-<h4 style="margin-top: 27px; margin-left: 9px;">Prf.Ankit Verma Sir</h4></h2>
+        </div>
+    </div>
+
+    <div class="home">
+        <a href="file:///C:/Users/RANJAN/Desktop/kiet%20html/Js_Basic_project/index.html">
+            <div class="home_in">
+                <h3 style="color: black;">Home</h3>
+            </div>
+        </a>
+    </div>
+    
+    <div class="sum_main">
+        <h2 style="color: greenyellow;">Enter a string</h2> 
+        <input type="text" id="inputString" value="Hello World">
+        <br><br>
+    
+        <input type="submit" onclick="searchVowelFunction()" style="background-color: yellowgreen; color: black;">
+        <div class="Answer">
+            <h2 style="color: yellowgreen;">Number of Vowels</h2>
+            <h3 id="demo" style="color: orangered;"></h3>
+        </div>
+        <br><br>
+    </div>
+
+    <script type="text/javascript">
+        function searchVowelFunction() {
+            // Get the input value
+            var inputString = document.getElementById('inputString').value;
+
+            // Call a function to count vowels
+            var result = countVowels(inputString);
+
+            // Display the result
+            document.getElementById('demo').innerHTML = result;
+        }
+
+        function countVowels(str) {
+            // Count the number of vowels in the string
+            var vowelCount = str.match(/[aeiouAEIOU]/g);
+            return vowelCount ? vowelCount.length : 0;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Vowels</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>JS_Project</h2>
+        </div>
+        <div class="side_logo">
+            <h2>CO-Ordinator-<h4 style="margin-top: 27px; margin-left: 9px;">Prf.Ankit Verma Sir</h4></h2>
+        </div>
+    </div>
+
+    <div class="home">
+        <a href="file:///C:/Users/RANJAN/Desktop/kiet%20html/Js_Basic_project/index.html">
+            <div class="home_in">
+                <h3 style="color: black;">Home</h3>
+            </div>
+        </a>
+    </div>
+    
+    <div class="sum_main">
+        <h2 style="color: greenyellow;">Enter a string</h2> 
+        <input type="text" id="inputString" value="Hello World">
+        <br><br>
+    
+        <input type="submit" onclick="searchVowelFunction()" style="background-color: yellowgreen; color: black;">
+        <div class="Answer">
+            <h2 style="color: yellowgreen;">Number of Vowels</h2>
+            <h3 id="demo" style="color: orangered;"></h3>
+        </div>
+        <br><br>
+    </div>
+
+    <script type="text/javascript">
+        function searchVowelFunction() {
+            // Get the input value
+            var inputString = document.getElementById('inputString').value;
+
+            // Call a function to count vowels
+            var result = countVowels(inputString);
+
+            // Display the result
+            document.getElementById('demo').innerHTML = result;
+        }
+
+        function countVowels(str) {
+            // Count the number of vowels in the string
+            var vowelCount = str.match(/[aeiouAEIOU]/g);
+            return vowelCount ? vowelCount.length : 0;
+        }
+    </script>
+</body>
+</html>

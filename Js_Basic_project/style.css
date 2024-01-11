@@ -1,0 +1,73 @@
+body{
+	background-color: black;
+}
+.header{
+	background-color: greenyellow;
+	display: flex;
+	margin: 0px;
+	padding: 4px;
+}
+.logo{
+	display: flex;
+	margin-right: 400px;
+	margin-left: 10px;
+}
+
+.side_logo{
+	display: flex;
+	padding: 4px;
+	margin: 1px;
+	margin-left: 460px;
+}
+.bodys{
+	margin-top: 100px;
+	margin: 10px;
+    padding: 10px;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.first_row{
+	display: flex;
+	margin-top: 100px;
+}
+.row_item{
+	background-color: greenyellow;
+	margin: 20px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 136px;
+	border-radius: 12px;
+}
+.row_item_bar{
+	margin: 0px;
+	padding: 1px;
+	width: 140px;
+	height: 10px;
+	border-radius: 20px;
+}
+.home{
+	margin-left: 1200px;
+}
+.home_in{
+	background-color: greenyellow;
+	width: 80px;
+	height: 24px;
+	border-radius: 12px;
+	text-align: center;
+
+}
+.row_item_bar h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.sum_main{
+	text-align: center;
+	margin: 150px;
+
+}
+.Answer{
+
+}

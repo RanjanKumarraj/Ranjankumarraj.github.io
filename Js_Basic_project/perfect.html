@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfect Number Checker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <h2>JS_Project</h2>
+            </div>
+            <div class="side_logo">
+                <h2>CO-Ordinator-<h4 style="margin-top: 27px; margin-left: 9px;">Prf.Ankit Verma Sir</h4></h2>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <a href="file:///C:/Users/RANJAN/Desktop/kiet%20html/Js_Basic_project/index.html">
+          <div class="home_in">
+            <h3 style="color: black;">Home</h3>
+        </div>
+        </a>
+    </div>
+    
+    <div class="sum_main">
+        <h2 style="color: greenyellow;">Enter Number</h2>    
+        <input type="text" id="firstname" value="">
+        <br><br>
+        
+        <input type="submit" onclick="perfectFunction()" style="background-color: yellowgreen; color: black;">
+        <br><br>
+        <div class="Answer">
+            <h2 style="color: yellowgreen;">Answer
+                <h3 id="demo" style="color: orangered;"></h3>
+            </h2>
+        </div>
+        <br><br>
+    </div>
+    
+    <script type="text/javascript">
+        function perfectFunction() {
+            var number = document.getElementById("firstname").value;
+            
+            if (number === "" || isNaN(number)) {
+                document.getElementById("demo").innerHTML = "Please enter a valid number.";
+                document.getElementById("demo").style.color = "red";
+            } else {
+                number = parseInt(number);
+
+                // Check if the entered number is a perfect number
+                if (isPerfectNumber(number)) {
+                    document.getElementById("demo").innerHTML = "Perfect Number";
+                    document.getElementById("demo").style.color = "green";
+                } else {
+                    document.getElementById("demo").innerHTML = "Not a Perfect Number";
+                    document.getElementById("demo").style.color = "red";
+                }
+            }
+        }
+
+        function isPerfectNumber(num) {
+            var sum = 1; // Start with 1 as every number is divisible by 1
+
+            // Find divisors and add them to the sum
+            for (var i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    sum += i;
+                    if (i !== num / i) {
+                        sum += num / i;
+                    }
+                }
+            }
+
+            // Check if the sum of divisors equals the original number
+            return sum === num && num !== 1;
+        }
+    </script>
+</body>
+</html>
