@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greatest Number Finder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <h2>JS_Project</h2>
+            </div>
+            <div class="side_logo">
+                <h2>CO-Ordinator-<h4 style="margin-top: 27px; margin-left: 9px;">Prf.Ankit Verma Sir</h4></h2>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <a href="file:///C:/Users/RANJAN/Desktop/kiet%20html/Js_Basic_project/index.html">
+          <div class="home_in">
+            <h3 style="color: black;">Home</h3>
+        </div>
+        </a>
+    </div>
+    
+    <div class="sum_main">
+        <h2 style="color: greenyellow;">Enter Numbers</h2>    
+        <input type="text" id="num1" placeholder="Number 1">
+        <br><br>
+        <input type="text" id="num2" placeholder="Number 2">
+        <br><br>
+        
+        
+        <input type="submit" onclick="swapNumbers()" style="background-color: yellowgreen; color: black;">
+        <br><br>
+        <div class="Answer">
+            <h2 style="color: yellowgreen;">Answer
+                <h3 id="demo" style="color: orangered;"></h3>
+            </h2>
+        </div>
+        <br><br>
+    </div>
+    
+    <script type="text/javascript">
+        function swapNumbers() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById("demo").innerHTML = "Please enter valid numbers.";
+        document.getElementById("demo").style.color = "red";
+    } else {
+        // Swap the values of num1 and num2
+        var temp = num1;
+        num1 = num2;
+        num2 = temp;
+
+        document.getElementById("demo").innerHTML = "After swapping, num1 is: " + num1 + " and num2 is: " + num2;
+        document.getElementById("demo").style.color = "green";
+    }
+}
+
+    </script>
+</body>
+</html>
